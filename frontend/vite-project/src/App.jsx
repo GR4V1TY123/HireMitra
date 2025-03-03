@@ -19,6 +19,7 @@ import PostJob from './components/admin/PostJob'
 import JobApplicants from './components/admin/Applicants'
 import Applicants from './components/admin/Applicants'
 import Protected from './components/admin/Protected'
+import { config } from './utils/config'
 
 const appRouter = createBrowserRouter([
   {
@@ -76,6 +77,7 @@ const appRouter = createBrowserRouter([
     element: <Protected><Applicants /></Protected>
   },
 ])
+console.log("Frontend is using:", config.BASE_URL);
 
 function App() {
 
