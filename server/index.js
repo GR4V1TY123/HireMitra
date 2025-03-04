@@ -31,9 +31,7 @@ app.use(cookieParser())
 const corsOptions = {
     origin: function (origin, callback) {
         const allowedOrigins = [
-            "https://hiremitra.onrender.com", 
-            "http://localhost:3000",
-            "http://localhost:5173"
+            "https://hiremitra.onrender.com",
         ];
         
         if (!origin || allowedOrigins.includes(origin)) {
