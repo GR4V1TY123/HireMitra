@@ -21,7 +21,7 @@ app.use(cookieParser())
 const corsOptions = {
     origin: [
         "http://localhost:5173",  // Allow local development
-        "https://your-frontend.onrender.com"  // Allow Render frontend
+        "https://hiremitra.onrender.com"
     ],
     credentials: true
 };
