@@ -61,7 +61,7 @@ const ApplicantsTable = () => {
                 </TableHeader>
                 <TableBody>
                     {
-                        applicants && applicants.application.map((a, i) => {
+                        applicants && applicants?.application?.map((a, i) => {
                             return <tr className={a.status === "pending" ? "bg-gray-300" : a.status === "rejected" ? "bg-red-300" : "bg-green-300"} key={a._id} >
                                 <TableCell>{a.applicant.fullName}</TableCell>
                                 <TableCell>{a.applicant.email}</TableCell>
