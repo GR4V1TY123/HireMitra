@@ -66,7 +66,7 @@ app.get('*', (req,res)=>{
     res.sendFile(path.join(__dirname,'/frontend/vite-project/dist/index.html'))
 })
 
-
+connectDB();
 
 app.get("/home", (req,res)=>{
     res.status(200).json({
@@ -76,6 +76,5 @@ app.get("/home", (req,res)=>{
 })
 
 app.listen(PORT, ()=>{
-    connectDB();
     console.log(`Server is Active ${PORT}`)
 })
