@@ -13,7 +13,7 @@ import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { Loader2 } from 'lucide-react';
 import { useSelector, useDispatch } from 'react-redux';
-import { USER_API_ENDPOINT } from './../utils/constant';
+import { USER_API_ENDPOINT } from '../utils/constant';
 import { useToast } from '@/hooks/use-toast';
 import axios from 'axios';
 import { setUser } from '../redux/authSlice';

@@ -9,7 +9,7 @@ import { COMPANY_API_ENDPOINT } from '../../utils/constant';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useToast } from '@/hooks/use-toast';
 import { useDispatch, useSelector } from 'react-redux';
-import getCompanyById from './../../hooks/getCompanyById';
+import getCompanyById from '../../hooks/getCompanyById';
 
 const CompanyDetails = () => {
     const { toast } = useToast()
