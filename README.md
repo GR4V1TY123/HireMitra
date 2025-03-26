@@ -34,10 +34,11 @@ npm install
 Create a `.env` file in the `backend` folder:
 ```sh
 MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+SECRET_KEY=your_jwt_secret
+CLOUD_NAME=your_cloudinary_name
+CLOUDINARY_KEY=your_cloudinary_api_key
+CLOUDINARY_SECRET=your_cloudinary_api_secret
+CLOUDINARY_URL=your_cloudinary_url
 ```
 Run the backend server:
 ```sh
